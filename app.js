@@ -43,6 +43,11 @@ client.query(createTableQuery, (err, res) => {
   }
 });
 
+// checking..
+app.get("/",(req, res) => {
+  res.send("<h3>Portfolio Server Code</h3>")
+})
+
 // API endpoint to handle form submissions
 app.post('/submitForm', (req, res) => {
   const { name, email, message } = req.body;
